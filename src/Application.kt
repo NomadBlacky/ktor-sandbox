@@ -26,9 +26,6 @@ fun Application.module(testing: Boolean = false) {
         }
     }
 
-    val client = HttpClient() {
-    }
-
     routing {
         get("/") {
             call.respondText("HELLO WORLD!", contentType = ContentType.Text.Plain)
